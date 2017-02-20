@@ -1,0 +1,203 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	-moz-box-sizing: border-box; /* Firexfox */
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	background-color: #f0efef;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+main {
+	width: 700px;
+	float: left;
+}
+
+aside {
+	width: 300px;
+	float: right;
+	margin-top: 30px;
+	padding-right: 20px;
+}
+
+footer {
+	height: 220px;
+	color: #f0efef;
+	text-align: center;
+	background-color: #121212;
+	position: relative;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+main li {
+	padding-top: 2rem;
+	padding-left: 3rem;
+	padding-bottom: 6rem;
+	display: inline-block;
+}
+
+main img {
+	margin-bottom: 15px;
+}
+
+header {
+	background-color: #033048;
+	color: white;
+	padding-left: 3rem;
+	padding-top: 1.5rem;
+	height: 100px;
+}
+
+.nav-list li {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+	color: #f9e42e;
+	float: right;
+	margin: 10px;
+	padding-bottom: 10px;
+	/*Q: Why does this show left to right rather than in the list order in the html?*/
+	/*Q: Why is this purple not yellow?*/
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	margin-top: 15px;
+}
+
+.article {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.read-more {
+	font-size: 24px;
+	font-weight: bold;
+	float: right;
+	margin-top: 20px;
+}
+
+.learn-more {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.ad-unit {
+	padding-top: 80px;
+}
+
+.sidebar-header {
+	font-size: 32px;
+	font-weight: bolder;
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+.about {
+	font-weight: lighter;
+	font-size: 22px;
+}
+
+.sign-up {
+	clear: both;
+	background-color: #f9e42e;
+	height: 80px;
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+}
+
+.button {
+	border: 5px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #033048;
+	color: #f0efef; 
+	position: absolute;
+	top: 33%;
+	left: 42.5%;
+}
+
+h4 {
+	color: #f9e42e;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.facebook {
+	top: 40%;
+	right: 46%;
+	position: absolute;
+}
+
+.twitter {
+	top: 40%;
+	left: 45%;
+	position: absolute;
+}
+
+.copyright {
+	font-size: 12px;
+	font-weight: lighter;
+	margin-top: 100px;
+/*Q: Is this the best way of making the copy sit at the bottom of the page?*/
+}
+
+.article:first-of-type:first-letter {
+	font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
